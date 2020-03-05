@@ -26,4 +26,4 @@ For materials:
 python3 screenshotter.py --type materials
 ```
 
-3. Run the visualizer application.
+3. **Run the visualizer application.**
