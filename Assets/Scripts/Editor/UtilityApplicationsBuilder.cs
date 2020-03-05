@@ -2,7 +2,6 @@ using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 using System.Linq;
 using UnityEditor.Build.Reporting;
 
@@ -143,14 +142,12 @@ public static class UtilityApplicationsBuilder
     /// <summary>
     /// Build a utility application. Parameters are handled via environment args.
     /// </summary>
+    [MenuItem("TDW/Build Applications")]
     public static void BuildUtilityApplication()
     {
-        // Parse the args.
-        string[] args = Environment.GetCommandLineArgs();
-        string version = args[7];
-
         // e.g. Assets/bin
-        string rootDirectory = Path.Combine(Application.dataPath, "bin", version);
+        string rootDirectory = Path.Combine(Application.dataPath, "bin", 
+            Application.version);
         if (!Directory.Exists(rootDirectory))
         {
             Directory.CreateDirectory(rootDirectory);
