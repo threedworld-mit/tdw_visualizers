@@ -112,7 +112,7 @@ public static class UtilityApplicationsBuilder
         new Dictionary<string, PlatformData>
     {
                 { "Linux", new PlatformData(".x86_64", BuildTarget.StandaloneLinux64) },
-                { "Darwin", new PlatformData(".app", BuildTarget.StandaloneOSX) },
+                { "OSX", new PlatformData(".app", BuildTarget.StandaloneOSX) },
                 { "Windows", new PlatformData(".exe", BuildTarget.StandaloneWindows64) }
     };
     /// <summary>
