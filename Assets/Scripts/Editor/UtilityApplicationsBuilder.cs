@@ -145,14 +145,13 @@ public static class UtilityApplicationsBuilder
     [MenuItem("TDW/Build Applications")]
     public static void BuildUtilityApplication()
     {
-        // e.g. Assets/bin
-        string rootDirectory = Path.Combine(Application.dataPath, "bin", 
+        string rootDirectory = Path.Combine("D:/tdw_visualizers/bin",
             Application.version);
         if (!Directory.Exists(rootDirectory))
         {
             Directory.CreateDirectory(rootDirectory);
         }
-        // e.g. Assets/bin/Windows
+        // e.g. bin/Windows
         foreach (string platform in Platforms.Keys)
         {
             string platformDirectory = Path.Combine(rootDirectory, platform);
@@ -162,7 +161,7 @@ public static class UtilityApplicationsBuilder
             }
 
             // Build each application.
-            // e.g. Assets/bin/Windows/ModelVisualizer
+            // e.g. bin/Windows/ModelVisualizer
             foreach (ApplicationType application in Applications.Keys)
             {
                 string applicationDirectory = Path.Combine(platformDirectory, 
