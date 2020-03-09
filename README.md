@@ -1,6 +1,8 @@
 # README
 
-Usage the visualizer applications to view and filter images of TDW assets. The Model Visualizer will show images of models. The Material Visualizer will show images of visual materials.
+The visualizer applications can display using TDW assets using images created by the "screenshotter" controller. Use the visualizers to see all of the assets in a library at a glance, to search for assets by name, and to review some of the metadata.
+
+The Model Visualizer will show images of models. The Material Visualizer will show images of visual materials.
 
 ![](images/model_visualizer.png)
 
