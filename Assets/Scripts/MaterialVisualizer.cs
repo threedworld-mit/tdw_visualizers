@@ -129,7 +129,7 @@ public class MaterialVisualizer : MonoBehaviour
         foreach (Record record in records.records)
         {
             string filepath = Path.Combine(ImageDirectory,
-                record.name + ".png");
+                record.name + ".jpg");
             if (!File.Exists(filepath))
             {
                 continue;
@@ -153,7 +153,7 @@ public class MaterialVisualizer : MonoBehaviour
         PopulateDropdownSearch();
         dropdownSearch.onValueChanged.AddListener(SelectSearchType);
         inputSearch.onValueChanged.AddListener(FilterByName);
-        // Set a defaul value.
+        // Set a default value.
         dropdownSearch.value = 0;
 
         // Listen to events.

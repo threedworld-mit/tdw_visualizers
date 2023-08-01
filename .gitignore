@@ -45,3 +45,5 @@ tags
 
 .DS_store
 bin/
+Logs/
+UserSettings/
